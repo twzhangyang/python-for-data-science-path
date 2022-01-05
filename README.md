@@ -45,6 +45,8 @@ Install pandas module in this virtual environment
 Quit virtual environment 
 - Run: workon temp \
 Apply `temp` virtual environment
+- Run: rmvirtualenv temp \
+Delete `temp` virtual environment if you don't need it anymore
 
 ### Requirements files
 Requirements files are files containing a list of items to be installed using pip install, Given you already installed `requests` module in the `temp` virtual environment, we can use `pip freeze` to dump installed module list to a file named `requirements.txt`
@@ -56,3 +58,22 @@ You could run below command to install new modules:
 ```
 python -m pip install -r requirements.txt
 ```
+
+## Create Jupyter notebook
+The notebook extends the console-based approach to interactive computing in a qualitatively new direction, providing a web-based application suitable for capturing the whole computation process: developing, documenting, and executing code, as well as communicating the results. The Jupyter notebook combines two components: A web application and Notebook documents.
+You can install Jupyter by installing [Anaconda](https://docs.jupyter.org/en/latest/install/notebook-classic.html0) or just by pip.
+
+Instead of use Jupyter notebook directly, we also can use it in [VSCode](https://code.visualstudio.com/docs/datascience/jupyter-notebooks), PyCharm(professional edition) etc IDE.
+
+### Quick start with Jupyter notebook in PyCharm
+- Create a new Python project, specify a virtual environment.
+> Press ⌘ , to open the project Settings/Preferences and go to Project <project name> | Python Interpreter. Then click the The Configure project interpreter icon and select Add.
+
+- Open or create an .ipynb file.
+
+- Add and edit source cells.
+
+### Quick start with VSCode
+- Install [Jupyter Extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+- Creating a new .ipynb file in your workspace
+- Execute any of the code cells to launch the Jupyter server.
