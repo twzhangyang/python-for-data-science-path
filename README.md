@@ -77,3 +77,25 @@ Instead of use Jupyter notebook directly, we also can use it in [VSCode](https:/
 - Install [Jupyter Extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 - Creating a new .ipynb file in your workspace
 - Execute any of the code cells to launch the Jupyter server.
+
+## Data science skill learning path
+- Python basic syntax
+- Data structure
+    - list
+    - array
+    - dict
+    - tuples
+ - Matrix
+    - numpy
+    - matplot
+ - Data frame
+    - pandas
+ - Visualization
+ - Data processing
+ - Linear regression
+ - Classification
+ - Clustering
+ - Association rule learning
+ - Reinforcement learning
+ - Artificial Neural Networks
+ - Convolutional Neural Networks
