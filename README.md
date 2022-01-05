@@ -29,19 +29,30 @@ source /usr/local/bin/virtualenvwrapper.sh
 NOTE: `VIRTUALENVWRAPPER_PYTHON` is a variable of the full path of the python3 interpreter. please use `which python3` to locate your python3.
 
 ### Quick start on a new project
-- Run: workon
+- Run: workon \
 A list of environments, empty, is printed.
-- Run: mkvirtualenv temp
+- Run: mkvirtualenv temp \
 A new environment, temp is created and activated.
-- Run: workon
+- Run: workon \
 This time, the temp environment is included.
-- Run: python3 --version
-Display the python3 version for this virtual python3 environment
-- Run: python3 -m pip list
+- Run: python --version \
+Display the python version for this virtual python environment
+- Run: python -m pip list \
 Give you a empty python3 environment
-- Run: python3 -m pip install pandas
+- Run: python -m pip install requests \
 Install pandas module in this virtual environment
-- Run: deactivate
+- Run: deactivate \
 Quit virtual environment 
-- Run: workon temp
+- Run: workon temp \
 Apply `temp` virtual environment
+
+### Requirements files
+Requirements files are files containing a list of items to be installed using pip install, Given you already installed `requests` module in the `temp` virtual environment, we can use `pip freeze` to dump installed module list to a file named `requirements.txt`
+```
+python -m pip freeze > requirements.txt
+```
+Imaging you are one of the team member who work together on a python project, if someone installed a new python module he will update `requirements.txt` and committed to github. 
+You could run below command to install new modules:
+```
+python -m pip install -r requirements.txt
+```
