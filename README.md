@@ -59,6 +59,9 @@ You could run below command to install new modules:
 python -m pip install -r requirements.txt
 ```
 
+### Another python module management tool 
+[Pipenv](https://pipenv.pypa.io/en/latest/0) is another tool for managing isolated python environment
+
 ## Create Jupyter notebook
 The notebook extends the console-based approach to interactive computing in a qualitatively new direction, providing a web-based application suitable for capturing the whole computation process: developing, documenting, and executing code, as well as communicating the results. The Jupyter notebook combines two components: A web application and Notebook documents.
 You can install Jupyter by installing [Anaconda](https://docs.jupyter.org/en/latest/install/notebook-classic.html0) or just by pip.
